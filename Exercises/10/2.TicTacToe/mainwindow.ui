@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>410</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/images/TicTacToe.png</normaloff>:/images/TicTacToe.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="player1Label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Robot</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="player2Label">
+    <property name="geometry">
+     <rect>
+      <x>349</x>
+      <y>50</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Arash</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="winsLabel">
+    <property name="geometry">
+     <rect>
+      <x>184</x>
+      <y>10</y>
+      <width>42</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>0 - 0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="board_00">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>130</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 1px solid #000;
+}
+
+QPushButton:hover{
+	background-color: rgb(161, 161, 161);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="X" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="Y" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="vsLabel">
+    <property name="geometry">
+     <rect>
+      <x>189</x>
+      <y>45</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>VS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="board_01">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>100</y>
+      <width>130</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 1px solid #000;
+}
+
+QPushButton:hover{
+	background-color: rgb(161, 161, 161);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="X" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="Y" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="board_02">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>100</y>
+      <width>130</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 1px solid #000;
+}
+
+QPushButton:hover{
+	background-color: rgb(161, 161, 161);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="X" stdset="0">
+     <number>2</number>
+    </property>
+    <property name="Y" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="board_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>130</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 1px solid #000;
+}
+
+QPushButton:hover{
+	background-color: rgb(161, 161, 161);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="X" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="Y" stdset="0">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="board_12">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>230</y>
+      <width>130</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 1px solid #000;
+}
+
+QPushButton:hover{
+	background-color: rgb(161, 161, 161);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="X" stdset="0">
+     <number>2</number>
+    </property>
+    <property name="Y" stdset="0">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="board_11">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>230</y>
+      <width>130</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 1px solid #000;
+}
+
+QPushButton:hover{
+	background-color: rgb(161, 161, 161);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="X" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="Y" stdset="0">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="board_20">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>130</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 1px solid #000;
+}
+
+QPushButton:hover{
+	background-color: rgb(161, 161, 161);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="X" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="Y" stdset="0">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="board_22">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>360</y>
+      <width>130</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 1px solid #000;
+}
+
+QPushButton:hover{
+	background-color: rgb(161, 161, 161);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="X" stdset="0">
+     <number>2</number>
+    </property>
+    <property name="Y" stdset="0">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="board_21">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>360</y>
+      <width>130</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 1px solid #000;
+}
+
+QPushButton:hover{
+	background-color: rgb(161, 161, 161);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="X" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="Y" stdset="0">
+     <number>2</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>410</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_game"/>
+    <addaction name="actionRestart_Round"/>
+    <addaction name="actionMain_Menu"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMain_Menu"/>
+   <addaction name="actionRestart_Round"/>
+   <addaction name="actionNew_game"/>
+  </widget>
+  <action name="actionNew_game">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/new-game.png</normaloff>:/images/new-game.png</iconset>
+   </property>
+   <property name="text">
+    <string>Restart game</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionRestart_Round">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/restart.png</normaloff>:/images/restart.png</iconset>
+   </property>
+   <property name="text">
+    <string>Restart round</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionMain_Menu">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/go-back.png</normaloff>:/images/go-back.png</iconset>
+   </property>
+   <property name="text">
+    <string>Go Back</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>board_00</tabstop>
+  <tabstop>board_01</tabstop>
+  <tabstop>board_02</tabstop>
+  <tabstop>board_10</tabstop>
+  <tabstop>board_11</tabstop>
+  <tabstop>board_12</tabstop>
+  <tabstop>board_20</tabstop>
+  <tabstop>board_21</tabstop>
+  <tabstop>board_22</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

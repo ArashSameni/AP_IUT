@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>go-back.png</file>
+        <file>new-game.png</file>
+        <file>restart.png</file>
+        <file>TicTacToe.png</file>
+    </qresource>
+</RCC>

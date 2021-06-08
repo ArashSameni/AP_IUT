@@ -53,6 +53,13 @@
         "xutility": "cpp",
         "numeric": "cpp",
         "iomanip": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "deque": "cpp",
+        "fstream": "cpp",
+        "list": "cpp",
+        "chrono": "cpp",
+        "filesystem": "cpp",
+        "ratio": "cpp",
+        "sstream": "cpp"
     }
 }
